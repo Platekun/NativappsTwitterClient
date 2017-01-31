@@ -1,0 +1,14 @@
+@import "colors";
+@import "mixins";
+@import "general";
+@import "header";
+@import "logo";
+@import "tweet-form";
+@import "tweet-list";
+@import "tweet";
+@import "follow-btn";
+@import "footer";
+
+* {
+    box-sizing: border-box;
+}

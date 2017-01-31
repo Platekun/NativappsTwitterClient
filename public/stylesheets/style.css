@@ -1,0 +1,186 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Nativapps";
+  src: url("./fonts/UbuntuMono-R.ttf"); }
+li {
+  list-style-type: none; }
+
+ul {
+  padding-left: 0; }
+
+a,
+a:link,
+a:visited {
+  text-decoration: none; }
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto; }
+
+.main-header {
+  color: inherit;
+  background-color: #1DA1F2; }
+  .main-header .wrapper {
+    padding: 1em 0; }
+
+.logo {
+  margin: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.tweet-box {
+  background-color: #E8F5FD; }
+
+.tweet-form {
+  margin: 0 auto;
+  padding: 2em 0;
+  max-width: 36.75em; }
+  .tweet-form textarea {
+    width: 100%;
+    height: 6em;
+    padding: 0.5em 0.625em;
+    font-size: 0.875em;
+    border: 1px solid #8899a6;
+    border-radius: 4px;
+    resize: none; }
+
+.tweet-form-submitter {
+  position: relative;
+  float: right; }
+  .tweet-form-submitter .fa {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.6em;
+    z-index: 2;
+    color: white;
+    background-color: inherit; }
+
+.btn {
+  width: 5.955em;
+  padding: 0.5625em 1em 0.5em 1.875em;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #1DA1F2;
+  font-weight: bold; }
+  .btn:hover {
+    background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+    background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+    background-repeat: no-repeat; }
+
+.tweets-list {
+  margin-top: 2em;
+  min-height: 100vh; }
+  .tweets-list .wrapper {
+    padding-bottom: 5em; }
+  .tweets-list h2 {
+    text-align: center;
+    width: 5em;
+    margin: 0 auto;
+    border-bottom: 3px solid #1DA1F2; }
+  .tweets-list ul {
+    text-align: center; }
+  .tweets-list .follow-us {
+    text-align: center;
+    margin: 1em; }
+
+/****** Embedded Tweets ******/
+blockquote.twitter-tweet {
+  display: inline-block;
+  padding: 16px;
+  margin: 10px 0;
+  width: 90%;
+  max-width: 29.25em;
+  border: #ddd 1px solid;
+  border-top-color: #eee;
+  border-bottom-color: #bbb;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  font: bold 14px/18px Helvetica, Arial, sans-serif;
+  color: #000;
+  text-align: left;
+  cursor: pointer; }
+  blockquote.twitter-tweet p {
+    margin: 0 5px 10px 0;
+    font: normal 18px/24px "Helvetica Neue",Helvetica,Arial,sans-serif; }
+  blockquote.twitter-tweet time, blockquote.twitter-tweet .tweeter-user-name {
+    font-size: 0.75em;
+    color: #666;
+    background-color: inherit; }
+  blockquote.twitter-tweet .tweet-header {
+    height: 4em;
+    position: relative;
+    color: black;
+    background-color: inherit; }
+  blockquote.twitter-tweet .profile-image {
+    position: absolute;
+    top: 0;
+    left: 0; }
+    blockquote.twitter-tweet .profile-image img {
+      border-radius: 5px; }
+  blockquote.twitter-tweet .tweeter-name a[href^="https://twitter.com"] {
+    position: absolute;
+    top: 0;
+    left: 3.5em;
+    font-weight: bold;
+    text-align: left;
+    color: black;
+    background-color: inherit; }
+    blockquote.twitter-tweet .tweeter-name a[href^="https://twitter.com"]:hover {
+      text-decoration: underline;
+      color: #0084B4; }
+  blockquote.twitter-tweet .tweeter-user-name {
+    position: absolute;
+    top: 0;
+    left: 17.5em; }
+    blockquote.twitter-tweet .tweeter-user-name:before {
+      content: "@"; }
+  blockquote.twitter-tweet time {
+    position: absolute;
+    top: 0;
+    top: 1.6em;
+    left: 4.5em; }
+
+/****** Embedded Timelines ******/
+a.twitter-timeline {
+  /* Buttonish */
+  display: inline-block;
+  padding: 6px 12px 6px 30px;
+  margin: 10px 0;
+  border: #ccc solid 1px;
+  border-radius: 3px;
+  background: #f8f8f8 url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNzIgNzIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDcyIDcyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IHg9IjAiIGZpbGw9Im5vbmUiIHdpZHRoPSI3MiIgaGVpZ2h0PSI3MiIvPg0KPHBhdGggZmlsbD0iIzU1YWNlZSIgZD0iTTY4LjgxMiwxNS4xNDFjLTIuMzQ4LDEuMDM5LTQuODY5LDEuNzQzLTcuNTE5LDIuMDZjMi43MDMtMS42Miw0Ljc3OC00LjE4Nyw1Ljc1Ni03LjI0NGMtMi41MjksMS41LTUuMzMsMi41OTItOC4zMTMsMy4xNzYNCglDNTYuMzQ5LDEwLjU5MSw1Mi45NDgsOSw0OS4xODIsOWMtNy4yMjksMC0xMy4wOTIsNS44NjEtMTMuMDkyLDEzLjA5M2MwLDEuMDI2LDAuMTE4LDIuMDIxLDAuMzM4LDIuOTgxDQoJYy0xMC44ODUtMC41NDgtMjAuNTI4LTUuNzU3LTI2Ljk4Ny0xMy42NzljLTEuMTI2LDEuOTM2LTEuNzcxLDQuMTg0LTEuNzcxLDYuNTgxYzAsNC41NDIsMi4zMTIsOC41NTEsNS44MjQsMTAuODk4DQoJYy0yLjE0Ni0wLjA2OS00LjE2NS0wLjY1Ny01LjkzLTEuNjM4Yy0wLjAwMiwwLjA1NS0wLjAwMiwwLjExLTAuMDAyLDAuMTYyYzAsNi4zNDUsNC41MTMsMTEuNjM4LDEwLjUwNCwxMi44NA0KCWMtMS4xMDEsMC4yOTgtMi4yNTYsMC40NTctMy40NDksMC40NTdjLTAuODQ2LDAtMS42NjctMC4wNzgtMi40NjUtMC4yMzFjMS42NjcsNS4yLDYuNDk5LDguOTg2LDEyLjIzLDkuMDkNCgljLTQuNDgyLDMuNTEyLTEwLjEyOSw1LjYwNi0xNi4yNiw1LjYwNmMtMS4wNTUsMC0yLjA5Ni0wLjA2MS0zLjEyMi0wLjE4NGM1Ljc5NCwzLjcxNywxMi42NzYsNS44ODIsMjAuMDY3LDUuODgyDQoJYzI0LjA4MywwLDM3LjI1MS0xOS45NDksMzcuMjUxLTM3LjI0OWMwLTAuNTY2LTAuMDE0LTEuMTM0LTAuMDM5LTEuNjk0QzY0LjgzOCwyMC4wNjgsNjcuMDU4LDE3Ljc2NSw2OC44MTIsMTUuMTQxeiIvPg0KPC9zdmc+DQo=") 8px 8px no-repeat;
+  background-size: 1em 1em;
+  /* Text */
+  font: normal 12px/18px Helvetica, Arial, sans-serif;
+  color: #333;
+  white-space: nowrap;
+  /* Color Highlight for keyboard navigation */ }
+  a.twitter-timeline:focus  {
+    outline: none;
+    border-color: #0089cb; }
+  a.twitter-timeline:hover, a.twitter-timeline:focus {
+    background-color: #dedede; }
+
+.twitter-footer {
+  padding: 1em 0;
+  color: white;
+  background-color: #1DA1F2;
+  border: 1px solid #8899a6; }
+  .twitter-footer p {
+    margin: 0;
+    text-align: center; }
+  .twitter-footer a {
+    color: white;
+    background-color: inherit; }
+
+* {
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=style.css.map */

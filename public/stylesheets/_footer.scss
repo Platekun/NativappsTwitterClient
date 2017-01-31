@@ -1,0 +1,14 @@
+.twitter-footer {
+    padding: 1em 0;
+    color: white;
+    background-color: $blue;
+    border: 1px solid $tweet-gray;
+    p {
+        margin: 0;
+        text-align: center;
+    }
+    a {
+        color: white;
+        background-color: inherit;
+    }
+}

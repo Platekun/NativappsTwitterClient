@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Nativapps";
+  src: url("./fonts/UbuntuMono-R.ttf");
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}

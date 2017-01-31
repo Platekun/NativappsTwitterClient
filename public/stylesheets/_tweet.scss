@@ -1,0 +1,63 @@
+/****** Embedded Tweets ******/
+blockquote.twitter-tweet {
+	display: inline-block;
+	padding: 16px;
+	margin: 10px 0;
+	width: 90%;
+	max-width: 29.25em;
+	border: #ddd 1px solid;
+	border-top-color: #eee;
+	border-bottom-color: #bbb;
+	border-radius: 5px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+	font: bold 14px/18px Helvetica, Arial, sans-serif;
+	color: #000;
+	text-align: left;
+	cursor: pointer;
+	p {
+		margin: 0 5px 10px 0;
+		font: normal 18px/24px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	}
+	time, .tweeter-user-name {
+		font-size: 0.75em;
+		color: #666;
+		background-color: inherit;
+	}
+	.tweet-header {
+		height: 4em;
+		position: relative;
+		color: black;
+		background-color: inherit;
+	}
+	.profile-image {
+		@include top();
+		left: 0;
+		img {
+			border-radius: 5px;
+		}
+	}
+	.tweeter-name a[href^="https://twitter.com"] {
+		@include top();
+		left: 3.5em;
+		font-weight: bold;
+		text-align: left;
+		color: black;
+		background-color: inherit;
+		&:hover {
+			text-decoration: underline;
+			color: $link;
+		}
+	}
+	.tweeter-user-name {
+		@include top();
+		left: 17.5em;
+		&:before {
+			content: "@";
+		}
+	}
+	time {
+		@include top();
+		top: 1.6em;
+    	left: 4.5em;
+	}
+}

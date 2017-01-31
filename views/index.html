@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="author" content="Carlos Camilo Lobo Ulloque">
+        <meta name="description" content="Prueba técnica para un proceso de contratación en Nativapps">
+        <meta name="keywords" content="HTML,CSS,JavaScript, NodeJs, Twitter, Frontend, Backend, Nativapps">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <title>Nativapps Twitter Client</title>
+        <link rel="stylesheet" href="stylesheets/vendor/normalize.css">
+        <link rel="stylesheet" href="stylesheets/vendor/h5bp.css">
+        <link rel="stylesheet" href="stylesheets/vendor/font-awesome.css">
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="shortcut icon" href="http://nativapps.co/nativapps/wp-content/themes/nativappstheme/favicon.ico">
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="wrapper">
+                <h1 class="logo"><a href="http://nativapps.co/en">Nativapps<i class="fa fa-twitter" aria-hidden="true"></i></a></h1>
+            </div>
+        </header>
+        <main>
+            <section class="tweet-box">
+                <div class="wrapper">
+                    <h2 class="visuallyhidden">Tweet Form</h2>
+                    <form action="/tweets" method="POST" class="tweet-form clearfix">
+                        <fieldset>
+                            <label for="status" class="visuallyhidden">Status:</label>
+                            <textarea id="status" name="status" placeholder="What's Happening?"></textarea>
+                        </fieldset>
+                        <div class="tweet-form-submitter ">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            <button type="submit" id="status-submitter"class="btn">Tweet</button>
+                        </div>
+                    </form>                    
+                </div>
+            </section>
+
+            <section class="tweets-list">
+                <div class="wrapper">
+                    <h2><span>Tweets</span></h2>
+                    <p class="follow-us"><a href="https://twitter.com/NativappsBot" class="twitter-timeline">@NativappsBot</a></p>
+                    <ul>
+                        <!--Tweets go here-->    
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="twitter-footer">
+            <p><i class="fa fa-heart" aria-hidden="true"></i> Powered by <a href="https://github.com/BoyCook/TwitterJSClient">TwitterJSClient</a> + <a href="https://twitter.com/"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></p>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+        <script id="tweet-template" type="text/x-handlebars-template">
+            <blockquote class="twitter-tweet">
+                <div class="tweet-header clearfix">
+                    <p class="profile-image"><a href="{{user.profile_image_url_https}}"><img src={{user.profile_image_url_https}} alt={{user.name}}></a></p>
+                    
+                    <p class="tweeter-name"><a href="https://twitter.com/{{user.name}}">{{user.name}}</a></p>
+                    <p class="tweeter-user-name"><a href="https://twitter.com">{{user.screen_name}}</a></p>
+                    
+                    <p><time>{{created_at}}</time></p>
+                </div>
+                <p>{{text}}</p>
+            </blockquote>
+        </script>
+        <script src="javascripts/bundle.js"></script>
+    </body>
+</html>

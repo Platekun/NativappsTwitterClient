@@ -1,0 +1,20 @@
+.tweets-list {
+	margin-top: 2em;
+	min-height: 100vh;
+	.wrapper {
+		padding-bottom: 5em;
+	}
+	h2 {
+		text-align: center;
+		width: 5em;
+		margin: 0 auto;
+		border-bottom: 3px solid $blue;
+	}	
+	ul {
+  		text-align: center;
+	}
+    .follow-us {
+        text-align: center;
+        margin: 1em;
+    }
+}
