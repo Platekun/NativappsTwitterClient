@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "start": "npm run watch:server",
     "watch:server": "nodemon --exec babel-node bin/www",
     "watch:browser": "babel public/javascripts/app.js --watch --out-file public/javascripts/bundle.js"
   },
